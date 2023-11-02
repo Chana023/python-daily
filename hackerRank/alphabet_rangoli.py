@@ -3,13 +3,35 @@ def print_rangoli(size):
 
     width = (4*size) - 3
     length = (2*size) - 1
-    line_string = '*'
+    all_letters = []
 
-    for row in range(0,length,1):
-        for column in range(0,width,1):
-            print(str(row) + ' ' + str(column))
+    for letter in range(max_letter, 96, -1):
+        all_letters.append(chr(letter))
 
-        #print(line_string.center(width,'-'))
+    
+
+    # Top pyramid
+
+
+
+    # Middle row generation 
+    middle_row = []
+    all_letters_minus_first = all_letters.copy()
+    all_letters_minus_first.reverse()
+    all_letters_minus_first.pop(0)
+
+
+    middle_row = all_letters + all_letters_minus_first
+
+    middle_row_value = '-'.join(middle_row)
+    
+
+    print(middle_row_value)
+
+    # Bottom pyramid
+        
+
+        
 
     
 
