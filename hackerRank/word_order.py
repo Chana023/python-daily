@@ -14,7 +14,6 @@ for value in range(number_words) :
 
 print(len(word_dict))
 answer = ' '.join(f'{value}' for key, value in word_dict.items())
-# answer = ' '.join(answer) 
 
 print(answer)
 
