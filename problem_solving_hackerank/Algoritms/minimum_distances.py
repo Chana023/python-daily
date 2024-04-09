@@ -22,11 +22,13 @@ def minimumDistances(a):
     for value in range(len(a)):
         for y in range(len(a)):
             if a[value] == a[y] and value!=y:
-                d = y - value
+                d = value - y
                 if d < lowest_d:
                     lowest_d = d
-
-    print(lowest_d)
+    if lowest_d == len(a):
+        return -1
+    else:
+        print(lowest_d)
 
 if __name__ == '__main__':
 
